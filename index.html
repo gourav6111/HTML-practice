@@ -2,6 +2,7 @@
   <head>
     <title>Inventions</title>
     <meta name="description" content="Inventions by elites" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
         background-image: url("dark.jpg");
@@ -10,9 +11,21 @@
         float: right;
         font-size: 40;
       }
-      button{
-        padding:10;
-        color:#595959;
+      button {
+        padding: 10;
+        color: black;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-radius: 12px;
+        padding: 10px;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
@@ -24,12 +37,16 @@
       </h1>
     </header>
     <section>
-      <nav>
-        <ul>
-          <li><button onclick="window.location.href='aboutus.html'">About us</button></li>
-          <li><button  onclick="window.location.href='authenticate.html'">Home</button></li>
-          <li><button  onclick="window.location.href='contactus.html'">Contact us</button></li>
-        </ul>
+      <nav class="flex-container">
+        <button onclick="window.location.href='aboutus.html'">
+          <b>About us</b>
+        </button>
+        <button onclick="window.location.href='authenticate.html'">
+          <b>Home</b>
+        </button>
+        <button onclick="window.location.href='contactus.html'">
+          <b>Contact us</b>
+        </button>
       </nav>
     </section>
   </body>
