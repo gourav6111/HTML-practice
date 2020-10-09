@@ -8,6 +8,22 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+      button {
+        padding: 10;
+        color: black;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-radius: 12px;
+        padding: 10px;
+      }
+      button:hover {
+        color: gray;
+      }
+      input {
+        background-color: lightgray;
+        color: white;
+      }
     </style>
   </head>
 
@@ -15,12 +31,10 @@
     <h1 style="text-align: center; padding: 50">
       <b style="font-size: 150; color: antiquewhite">Contact us</b>
     </h1>
-    <h2 style="text-align: center; font-size: xx-large">
-      You can drop your query here.
-    </h2>
-    <h2 style="text-align: center; font-size: xx-large; padding-left: 50">
+    <pre style="text-align: center; font-size: xx-large">
+         You can drop your query here.
       We'll shortly reach you via e-mail.
-    </h2>
+    </pre>
     <form
       action=""
       style="align-items: bottom; color: antiquewhite; padding-left: 600"
@@ -29,6 +43,7 @@
       <label for="query"></label>
       <input
         type="text"
+        size="50"
         placeholder="Tell us your query..."
         name="query"
         required
@@ -38,7 +53,12 @@
       <label for="email"></label>
       <input type="text" placeholder="Enter Email" name="email" required />
       <br />
-      <button type="submit" style="padding: 10; padding-top: 10">Submit</button>
+      <button
+        type="submit"
+        style="padding: 10; padding-top: 10; margin-top: 20px"
+      >
+        Submit
+      </button>
     </form>
   </body>
 </html>
