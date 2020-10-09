@@ -6,6 +6,25 @@
         text-align: center;
         padding: 100px;
       }
+      button {
+        padding: 10;
+        color: black;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-radius: 12px;
+        padding: 10px;
+      }
+      form {
+        padding: 10;
+      }
+      button:hover {
+        color: grey;
+      }
+      input {
+        background-color: lightgray;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -14,11 +33,14 @@
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required />
       <br />
+      <br />
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required />
       <br />
+      <br />
       <label for="age"><b>Age</b></label>
       <input placeholder="Enter your age" name="age" required />
+      <br />
       <br />
       <button type="submit">Login</button>
     </form>
