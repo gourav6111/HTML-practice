@@ -11,6 +11,13 @@
         float: right;
         font-size: 40;
       }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
       button {
         padding: 10;
         color: black;
@@ -19,24 +26,28 @@
         border-color: black;
         border-radius: 12px;
         padding: 10px;
+        background-color: grey;
       }
-      .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+      button:hover {
+        color: whitesmoke;
       }
     </style>
   </head>
 
   <body>
-    <header>
+    <header style="margin-top: 50px">
       <h1 style="text-align: right">
-        <b style="font-size: 70">Inventions which leads us ahead... </b>
+        <b
+          style="
+            font-size: 70;
+            text-shadow: 3px 3px;
+            text-decoration: underline;
+          "
+          >Inventions which leads us ahead...
+        </b>
       </h1>
     </header>
-    <section>
+    <section style="margin-top: 30px">
       <nav class="flex-container">
         <button onclick="window.location.href='aboutus.html'">
           <b>About us</b>
@@ -49,5 +60,10 @@
         </button>
       </nav>
     </section>
+    <footer>
+      <h1 style="margin-left: 800; margin-top: 600px">
+        <i>it's just a dummy website...</i>
+      </h1>
+    </footer>
   </body>
 </html>
